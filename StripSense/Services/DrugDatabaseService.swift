@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Combine
 
 public class DrugDatabaseService: ObservableObject {
     public static let shared = DrugDatabaseService()

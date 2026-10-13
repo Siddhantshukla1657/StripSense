@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Combine
 
 public struct UpdateManifest: Codable {
     public let version: String

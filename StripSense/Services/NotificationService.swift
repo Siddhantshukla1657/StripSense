@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Combine
 import UserNotifications
 
 public class NotificationService: ObservableObject {

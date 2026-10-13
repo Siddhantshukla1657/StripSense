@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Combine
 import AVFoundation
 
 public class SpeechService: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
