@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<!-- ── App Identity ── -->
+	<key>CFBundleDisplayName</key>
+	<string>StripSense</string>
+	<key>CFBundleIdentifier</key>
+	<string>yo.StripSense</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+
+	<!-- ── iOS Scene / Launch ── -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- ── Supported Orientations (iPhone) ── -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- ── Supported Orientations (iPad) ── -->
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- ── Privacy Usage Descriptions (REQUIRED by App Store / Xcode) ── -->
+
+	<!-- Camera: VisionKit live strip scanning -->
+	<key>NSCameraUsageDescription</key>
+	<string>StripSense uses the camera to scan medicine strips and identify their salt, strength and expiry date. Images are processed entirely on this device and are never transmitted to any server.</string>
+
+	<!-- Photo Library: import a saved strip photo -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>StripSense can read a strip photo from your library when live scanning is not possible. Photos are processed on device only and are not stored or shared.</string>
+
+	<!-- Location: MapKit pharmacy search -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>StripSense uses your location to show nearby pharmacies and Jan Aushadhi generic stores on the map. Your location is never stored or shared with any server.</string>
+
+</dict>
+</plist>
